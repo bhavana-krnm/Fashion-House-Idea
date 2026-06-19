@@ -11,7 +11,7 @@ export default function CategoryPage() {
     },
     {
       name: "Simple Blouse Designs",
-      slug: "simple",
+      slug: "simpleBlouse",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR_ObBEZro9nj1d1myYj4RqKm3Y86e_WBGhNUALrcsg&s=10"
     },
     {
@@ -21,7 +21,7 @@ export default function CategoryPage() {
     },
     {
       name: "Womens Fashion Dresses",
-      slug: "womens",
+      slug: "women",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvoYVCNLHG440KAEcfS78Pgp38bPmbncANn1VVQVT8Q&s=10"
     },
     {

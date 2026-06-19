@@ -1,13 +1,7 @@
-import { useState } from "react";
+import { useWishlist } from "./useWishlist";
 
 export default function Wishlist() {
-  const [wishlist] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem("wishlist")) || [];
-    } catch {
-      return [];
-    }
-  });
+  const { wishlist, removeFromWishlist } = useWishlist();
 
   return (
     <div style={{ padding: "20px" }}>
@@ -19,9 +13,9 @@ export default function Wishlist() {
         </p>
       ) : (
         <div style={{ display: "grid", gap: "10px", marginTop: "10px" }}>
-          {wishlist.map((item, index) => (
+          {wishlist.map((item) => (
             <div
-              key={index}
+              key={item.id}
               style={{
                 border: "1px solid #ddd",
                 padding: "12px",
@@ -29,7 +23,21 @@ export default function Wishlist() {
               }}
             >
               <h4>{item.name}</h4>
-              <p>{item.price}</p>
+              <p>₹{item.price}</p>
+              <button
+                onClick={() => removeFromWishlist(item.id)}
+                style={{
+                  marginTop: "8px",
+                  padding: "8px 10px",
+                  border: "none",
+                  background: "#e53935",
+                  color: "white",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                }}
+              >
+                Remove
+              </button>
             </div>
           ))}
         </div>

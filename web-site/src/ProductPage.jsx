@@ -6,37 +6,77 @@ export default function ProductPage() {
   const { category } = useParams();
 
   const subOptions = {
-    maggam: ["Simple Work", "Pattu Saree", "Bridal Work"],
-    simple: ["Back Design", "Hands", "Front Design"],
-    womens: ["Chudidhar", "Frocks", "Lehenga"],
-    kids: ["Traditional Pattu Langa (Girls)", "Kurtha Dhothi (Boys)"],
-    uniform: ["School", "College"],
-    office: ["Formal Shirts", "Office Sarees", "Blazers"],
+    maggam: [
+      { label: "Simple Work", key: "simple" },
+      { label: "Pattu Saree", key: "pattu" },
+      { label: "Bridal Work", key: "bridal" },
+    ],
+
+    simpleBlouse: [
+      { label: "Back Design", key: "backDesign" },
+      { label: "Hands", key: "handDesign" },
+      { label: "Front Design", key: "frontDesign" },
+    ],
+     
+    office: [
+      { label: "formal Shirts", key: "formals" },
+      { label: "Office Sarees", key: "officeSarees" },
+      { label: "Blazer Sets", key: "Blazers" },
+    ],
+
+    women: [
+      { label: "Chudidhar", key: "chudidhar" },
+      { label: "Frocks", key: "frocks" },
+      { label: "Lehenga", key: "lehenga" },
+    ],
+
+    kids: [
+      { label: "Girls Wear", key: "girls" },
+      { label: "Boys Wear", key: "boys" },
+    ],
+
+    uniform: [
+      { label: "School", key: "school" },
+      { label: "College", key: "college" },
+    ],
   };
+
+  const options = subOptions[category];
+
+  if (!options) {
+    return (
+      <div style={{ padding: "20px" }}>
+        <h2>Invalid Category</h2>
+        <Link to="/categories">← Back</Link>
+      </div>
+    );
+  }
 
   return (
     <>
       <Header />
 
-      <main className="products">
-        <h2>{category.toUpperCase()} Options</h2>
+      <main style={{ padding: "20px" }}>
+        <h2 style={{ textTransform: "uppercase" }}>
+          {category} OPTIONS
+        </h2>
 
         <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
-          {subOptions[category]?.map((opt, i) => (
+          {options.map((opt) => (
             <Link
-              key={i}
-              to={`/products/${category}/${encodeURIComponent(opt)}`}
+              key={opt.key}
+              to={`/products/${category}/${opt.key}`}
               style={{
                 textDecoration: "none",
                 color: "black",
                 border: "1px solid #ddd",
-                padding: "10px",
+                padding: "15px",
                 borderRadius: "10px",
                 width: "180px",
                 textAlign: "center",
               }}
             >
-              <h4>{opt}</h4>
+              <h4>{opt.label}</h4>
             </Link>
           ))}
         </div>
