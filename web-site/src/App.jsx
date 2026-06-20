@@ -8,13 +8,13 @@ import ProductDetailPage from "./ProductDetailPage";
 
 import CartPage from "./CartPage";
 import BuyNowPage from "./BuyNowPage";
-import CheckoutPage from "./CheckoutPage";
+import CheckoutPage from "./CheckOutPage";
 
 import OrderConfirmPage from "./OrderConfirmPage";
 import OrderTrackingPage from "./OrderTrackingPage";
 
 import Signup from "./Signup";
-import Signin from "./Signin";
+import Signin from "./SignIn";
 import Profile from "./Profile";
 import Wishlist from "./Wishlist";
 
