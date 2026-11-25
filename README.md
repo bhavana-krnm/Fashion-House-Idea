@@ -32,7 +32,14 @@ Fashion-House-Idea/
 
 ## **📸 Screenshots**
 
-<img width="960" height="540" alt="HomePage png" src="https://github.com/user-attachments/assets/dda07d6a-4aed-4821-ad34-cf8577020a03" />
+<img width="560" height="340" alt="HomePage png" src="https://github.com/user-attachments/assets/dda07d6a-4aed-4821-ad34-cf8577020a03" />
+<img width="560" height="340" alt="SignInPage png" src="https://github.com/user-attachments/assets/13b9770a-16a1-475d-bb3e-b16ec0315c3a" />
+<img width="560" height="340" alt="CategoryPage png" src="https://github.com/user-attachments/assets/a76b3906-389a-4c00-82bc-3daab52d259d" />
+<img width="731" height="500" alt="CartPage png" src="https://github.com/user-attachments/assets/0ada9d70-0755-41e9-bfc9-1bae1b3e0064" />
+<img width="731" height="518" alt="OrderPage png" src="https://github.com/user-attachments/assets/bd3e5299-a037-43ae-b125-675c9d3d9506" />
+
+
+
 
 
 
