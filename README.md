@@ -32,7 +32,9 @@ Fashion-House-Idea/
 
 ## **📸 Screenshots**
 
-Add screenshots of your homepage, categories section, and product listings here.
+<img width="960" height="540" alt="HomePage png" src="https://github.com/user-attachments/assets/dda07d6a-4aed-4821-ad34-cf8577020a03" />
+
+
 
 ## **🎯 Project Objective**
 
