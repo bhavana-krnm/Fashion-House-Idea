@@ -60,10 +60,10 @@ Version control using Git and GitHub
 
 ## **👩‍💻 Author**
 Bhavana
-
 GitHub: https://github.com/bhavana-krnm
 
 ## **🌐 Live Demo**
-Add your deployed website link here once the project is hosted.
+Explore the live project here:
+🔗 https://fashion-house-idea-mclw690d4-fashion-house-idea.vercel.app/
 
 ⭐ If you like this project, consider giving it a star on GitHub.
